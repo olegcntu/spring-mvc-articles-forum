@@ -138,13 +138,14 @@
 <body>
   <h1>PERSONAL NOTEBOOK</h1>
 <div id="wrapper">
-	<form id="signin" method="" action="" autocomplete="off">
-		<input type="text" id="user" name="user" placeholder="username" />
-		<input type="password" id="pass" name="pass" placeholder="password" />
+	<form id="signin"  th:method="GET" th:action="@{/workPage/work}" autocomplete="off">
+		<input type="text" id="user" name="user" placeholder="e-mail" />
+		<input type="password" id="password" name="password" placeholder="password" />
 		<button type="submit">&#xf0da;</button>
-		<p>forgot your password? <a href="#">click here</a></p>
+		<p>forgot your password? <a th:href="@{/renewal}">click here</a></p>
         <p>don't you have an account? <a th:href="@{/registration}">click here</a></p>
 	</form>
+
 </div>
 
 
